@@ -1,0 +1,442 @@
+2018-05-16 22:27:41,255 [INFO] oandapyV20.oandapyV20 : setting up API-client for environment practice
+2018-05-16 22:27:41,256 [INFO] __main__ : Event: adding handler: calculate
+2018-05-16 22:27:41,256 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/instruments/None/candles
+2018-05-16 22:27:42,852 [ERROR] oandapyV20.oandapyV20 : request https://api-fxpractice.oanda.com/v3/instruments/None/candles failed [400,{"errorMessage":"Invalid value specified for 'instrument'"}]
+2018-05-16 22:29:48,366 [INFO] oandapyV20.oandapyV20 : setting up API-client for environment practice
+2018-05-16 22:29:48,366 [INFO] __main__ : Event: adding handler: calculate
+2018-05-16 22:29:48,366 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2018-05-16 22:29:50,863 [INFO] oandapyV20.oandapyV20 : performing request https://stream-fxpractice.oanda.com/v3/accounts/101-003-1919548-002/pricing/stream
+2018-05-16 22:31:01,826 [INFO] __main__ : MAx: processed 2018-05-16T14:30:00.000000Z : state: SHORT
+2018-05-16 22:31:01,826 [INFO] __main__ : state change: from NEUTRAL to SHORT
+2018-05-16 22:31:01,826 [INFO] __main__ : Close existing positions ...
+2018-05-16 22:31:01,826 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/accounts/101-003-1919548-002/positions/EUR_USD
+2018-05-16 22:31:02,124 [INFO] __main__ : prepare to close: {}
+2018-05-16 22:31:02,124 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/accounts/101-003-1919548-002/orders
+2018-05-16 22:31:02,374 [INFO] __main__ : Response: 201 {
+  "orderCreateTransaction": {
+    "type": "MARKET_ORDER",
+    "instrument": "EUR_USD",
+    "units": "-1000",
+    "timeInForce": "FOK",
+    "positionFill": "DEFAULT",
+    "takeProfitOnFill": {
+      "price": "1.17360",
+      "timeInForce": "GTC"
+    },
+    "stopLossOnFill": {
+      "price": "1.18539",
+      "timeInForce": "GTC"
+    },
+    "reason": "CLIENT_ORDER",
+    "id": "374",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "374",
+    "requestID": "24416924141623387",
+    "time": "2018-05-16T14:31:03.642919633Z"
+  },
+  "orderFillTransaction": {
+    "type": "ORDER_FILL",
+    "orderID": "374",
+    "instrument": "EUR_USD",
+    "units": "-1000",
+    "price": "1.17948",
+    "pl": "0.0000",
+    "financing": "0.0000",
+    "commission": "0.0000",
+    "accountBalance": "10416.7814",
+    "gainQuoteHomeConversionFactor": "1.34087",
+    "lossQuoteHomeConversionFactor": "1.34106",
+    "guaranteedExecutionFee": "0.0000",
+    "halfSpreadCost": "0.0805",
+    "reason": "MARKET_ORDER",
+    "tradeOpened": {
+      "price": "1.17948",
+      "tradeID": "375",
+      "units": "-1000",
+      "guaranteedExecutionFee": "0.0000",
+      "halfSpreadCost": "0.0805",
+      "initialMarginRequired": "31.6344"
+    },
+    "fullPrice": {
+      "closeoutBid": "1.17933",
+      "closeoutAsk": "1.17975",
+      "timestamp": "2018-05-16T14:31:03.401609143Z",
+      "bids": [
+        {
+          "price": "1.17948",
+          "liquidity": "10000000"
+        }
+      ],
+      "asks": [
+        {
+          "price": "1.17960",
+          "liquidity": "10000000"
+        }
+      ]
+    },
+    "id": "375",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "374",
+    "requestID": "24416924141623387",
+    "time": "2018-05-16T14:31:03.642919633Z"
+  },
+  "relatedTransactionIDs": [
+    "374",
+    "375",
+    "376",
+    "377"
+  ],
+  "lastTransactionID": "377"
+}
+2018-05-16 22:32:02,026 [INFO] __main__ : MAx: processed 2018-05-16T14:31:00.000000Z : state: SHORT
+2018-05-16 22:33:00,802 [INFO] __main__ : MAx: processed 2018-05-16T14:32:00.000000Z : state: SHORT
+2018-05-16 22:34:01,731 [INFO] __main__ : MAx: processed 2018-05-16T14:33:00.000000Z : state: SHORT
+2018-05-16 22:35:00,443 [INFO] __main__ : MAx: processed 2018-05-16T14:34:00.000000Z : state: SHORT
+2018-05-16 22:36:00,731 [INFO] __main__ : MAx: processed 2018-05-16T14:35:00.000000Z : state: SHORT
+2018-05-16 22:37:00,930 [INFO] __main__ : MAx: processed 2018-05-16T14:36:00.000000Z : state: SHORT
+2018-05-16 22:38:01,916 [INFO] __main__ : MAx: processed 2018-05-16T14:37:00.000000Z : state: SHORT
+2018-05-16 22:39:02,179 [INFO] __main__ : MAx: processed 2018-05-16T14:38:00.000000Z : state: SHORT
+2018-05-16 22:40:00,949 [INFO] __main__ : MAx: processed 2018-05-16T14:39:00.000000Z : state: SHORT
+2018-05-16 22:41:01,263 [INFO] __main__ : MAx: processed 2018-05-16T14:40:00.000000Z : state: SHORT
+2018-05-16 22:42:01,264 [INFO] __main__ : MAx: processed 2018-05-16T14:41:00.000000Z : state: SHORT
+2018-05-16 22:43:02,095 [INFO] __main__ : MAx: processed 2018-05-16T14:42:00.000000Z : state: LONG
+2018-05-16 22:43:02,096 [INFO] __main__ : state change: from SHORT to LONG
+2018-05-16 22:43:02,096 [INFO] __main__ : Close existing positions ...
+2018-05-16 22:43:02,096 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/accounts/101-003-1919548-002/positions/EUR_USD
+2018-05-16 22:43:04,758 [INFO] __main__ : prepare to close: {"shortUnits": "ALL"}
+2018-05-16 22:43:04,758 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/accounts/101-003-1919548-002/positions/EUR_USD/close
+2018-05-16 22:43:05,012 [INFO] __main__ : close: response: {
+  "shortOrderCreateTransaction": {
+    "type": "MARKET_ORDER",
+    "instrument": "EUR_USD",
+    "units": "1000",
+    "timeInForce": "FOK",
+    "positionFill": "REDUCE_ONLY",
+    "reason": "POSITION_CLOSEOUT",
+    "shortPositionCloseout": {
+      "instrument": "EUR_USD",
+      "units": "ALL"
+    },
+    "id": "378",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "378",
+    "requestID": "42431325683822742",
+    "time": "2018-05-16T14:43:06.285292383Z"
+  },
+  "shortOrderFillTransaction": {
+    "type": "ORDER_FILL",
+    "orderID": "378",
+    "instrument": "EUR_USD",
+    "units": "1000",
+    "price": "1.18049",
+    "pl": "-1.3536",
+    "financing": "0.0004",
+    "commission": "0.0000",
+    "accountBalance": "10415.4282",
+    "gainQuoteHomeConversionFactor": "1.33997",
+    "lossQuoteHomeConversionFactor": "1.34021",
+    "guaranteedExecutionFee": "0.0000",
+    "halfSpreadCost": "0.0871",
+    "reason": "MARKET_ORDER_POSITION_CLOSEOUT",
+    "tradesClosed": [
+      {
+        "tradeID": "375",
+        "units": "1000",
+        "realizedPL": "-1.3536",
+        "financing": "0.0004",
+        "price": "1.18049",
+        "guaranteedExecutionFee": "0.0000",
+        "halfSpreadCost": "0.0871"
+      }
+    ],
+    "fullPrice": {
+      "closeoutBid": "1.18021",
+      "closeoutAsk": "1.18064",
+      "timestamp": "2018-05-16T14:43:05.930464201Z",
+      "bids": [
+        {
+          "price": "1.18036",
+          "liquidity": "10000000"
+        }
+      ],
+      "asks": [
+        {
+          "price": "1.18049",
+          "liquidity": "10000000"
+        }
+      ]
+    },
+    "id": "379",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "378",
+    "requestID": "42431325683822742",
+    "time": "2018-05-16T14:43:06.285292383Z"
+  },
+  "relatedTransactionIDs": [
+    "378",
+    "379",
+    "380",
+    "381"
+  ],
+  "lastTransactionID": "381"
+}
+2018-05-16 22:43:05,012 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/accounts/101-003-1919548-002/orders
+2018-05-16 22:43:05,269 [INFO] __main__ : Response: 201 {
+  "orderCreateTransaction": {
+    "type": "MARKET_ORDER",
+    "instrument": "EUR_USD",
+    "units": "1000",
+    "timeInForce": "FOK",
+    "positionFill": "DEFAULT",
+    "takeProfitOnFill": {
+      "price": "1.18623",
+      "timeInForce": "GTC"
+    },
+    "stopLossOnFill": {
+      "price": "1.17442",
+      "timeInForce": "GTC"
+    },
+    "reason": "CLIENT_ORDER",
+    "id": "382",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "382",
+    "requestID": "42431325683823121",
+    "time": "2018-05-16T14:43:06.540558244Z"
+  },
+  "orderFillTransaction": {
+    "type": "ORDER_FILL",
+    "orderID": "382",
+    "instrument": "EUR_USD",
+    "units": "1000",
+    "price": "1.18049",
+    "pl": "0.0000",
+    "financing": "0.0000",
+    "commission": "0.0000",
+    "accountBalance": "10415.4282",
+    "gainQuoteHomeConversionFactor": "1.33998",
+    "lossQuoteHomeConversionFactor": "1.34020",
+    "guaranteedExecutionFee": "0.0000",
+    "halfSpreadCost": "0.0871",
+    "reason": "MARKET_ORDER",
+    "tradeOpened": {
+      "price": "1.18049",
+      "tradeID": "383",
+      "units": "1000",
+      "guaranteedExecutionFee": "0.0000",
+      "halfSpreadCost": "0.0871",
+      "initialMarginRequired": "31.6376"
+    },
+    "fullPrice": {
+      "closeoutBid": "1.18021",
+      "closeoutAsk": "1.18064",
+      "timestamp": "2018-05-16T14:43:05.930464201Z",
+      "bids": [
+        {
+          "price": "1.18036",
+          "liquidity": "10000000"
+        }
+      ],
+      "asks": [
+        {
+          "price": "1.18049",
+          "liquidity": "9999000"
+        }
+      ]
+    },
+    "id": "383",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "382",
+    "requestID": "42431325683823121",
+    "time": "2018-05-16T14:43:06.540558244Z"
+  },
+  "relatedTransactionIDs": [
+    "382",
+    "383",
+    "384",
+    "385"
+  ],
+  "lastTransactionID": "385"
+}
+2018-05-16 22:44:02,858 [INFO] __main__ : MAx: processed 2018-05-16T14:43:00.000000Z : state: LONG
+2018-05-16 22:44:59,901 [INFO] __main__ : MAx: processed 2018-05-16T14:44:00.000000Z : state: LONG
+2018-05-16 22:46:01,229 [INFO] __main__ : MAx: processed 2018-05-16T14:45:00.000000Z : state: LONG
+2018-05-16 22:47:01,202 [INFO] __main__ : MAx: processed 2018-05-16T14:46:00.000000Z : state: LONG
+2018-05-16 22:48:01,242 [INFO] __main__ : MAx: processed 2018-05-16T14:47:00.000000Z : state: LONG
+2018-05-16 22:49:01,629 [INFO] __main__ : MAx: processed 2018-05-16T14:48:00.000000Z : state: LONG
+2018-05-16 22:50:02,161 [INFO] __main__ : MAx: processed 2018-05-16T14:49:00.000000Z : state: LONG
+2018-05-16 22:51:03,347 [INFO] __main__ : MAx: processed 2018-05-16T14:50:00.000000Z : state: LONG
+2018-05-16 22:52:01,233 [INFO] __main__ : MAx: processed 2018-05-16T14:51:00.000000Z : state: LONG
+2018-05-16 22:53:02,197 [INFO] __main__ : MAx: processed 2018-05-16T14:52:00.000000Z : state: SHORT
+2018-05-16 22:53:02,197 [INFO] __main__ : state change: from LONG to SHORT
+2018-05-16 22:53:02,198 [INFO] __main__ : Close existing positions ...
+2018-05-16 22:53:02,198 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/accounts/101-003-1919548-002/positions/EUR_USD
+2018-05-16 22:53:05,641 [INFO] __main__ : prepare to close: {"longUnits": "ALL"}
+2018-05-16 22:53:05,641 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/accounts/101-003-1919548-002/positions/EUR_USD/close
+2018-05-16 22:53:06,891 [INFO] __main__ : close: response: {
+  "longOrderCreateTransaction": {
+    "type": "MARKET_ORDER",
+    "instrument": "EUR_USD",
+    "units": "-1000",
+    "timeInForce": "FOK",
+    "positionFill": "REDUCE_ONLY",
+    "reason": "POSITION_CLOSEOUT",
+    "longPositionCloseout": {
+      "instrument": "EUR_USD",
+      "units": "ALL"
+    },
+    "id": "386",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "386",
+    "requestID": "60445726713976819",
+    "time": "2018-05-16T14:53:07.168939195Z"
+  },
+  "longOrderFillTransaction": {
+    "type": "ORDER_FILL",
+    "orderID": "386",
+    "instrument": "EUR_USD",
+    "units": "-1000",
+    "price": "1.17902",
+    "pl": "-1.9718",
+    "financing": "-0.0008",
+    "commission": "0.0000",
+    "accountBalance": "10413.4556",
+    "gainQuoteHomeConversionFactor": "1.34119",
+    "lossQuoteHomeConversionFactor": "1.34136",
+    "guaranteedExecutionFee": "0.0000",
+    "halfSpreadCost": "0.0805",
+    "reason": "MARKET_ORDER_POSITION_CLOSEOUT",
+    "tradesClosed": [
+      {
+        "tradeID": "383",
+        "units": "-1000",
+        "realizedPL": "-1.9718",
+        "financing": "-0.0008",
+        "price": "1.17902",
+        "guaranteedExecutionFee": "0.0000",
+        "halfSpreadCost": "0.0805"
+      }
+    ],
+    "fullPrice": {
+      "closeoutBid": "1.17887",
+      "closeoutAsk": "1.17929",
+      "timestamp": "2018-05-16T14:53:04.285356203Z",
+      "bids": [
+        {
+          "price": "1.17902",
+          "liquidity": "10000000"
+        }
+      ],
+      "asks": [
+        {
+          "price": "1.17914",
+          "liquidity": "10000000"
+        }
+      ]
+    },
+    "id": "387",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "386",
+    "requestID": "60445726713976819",
+    "time": "2018-05-16T14:53:07.168939195Z"
+  },
+  "relatedTransactionIDs": [
+    "386",
+    "387",
+    "388",
+    "389"
+  ],
+  "lastTransactionID": "389"
+}
+2018-05-16 22:53:06,891 [INFO] oandapyV20.oandapyV20 : performing request https://api-fxpractice.oanda.com/v3/accounts/101-003-1919548-002/orders
+2018-05-16 22:53:08,201 [INFO] __main__ : Response: 201 {
+  "orderCreateTransaction": {
+    "type": "MARKET_ORDER",
+    "instrument": "EUR_USD",
+    "units": "-1000",
+    "timeInForce": "FOK",
+    "positionFill": "DEFAULT",
+    "takeProfitOnFill": {
+      "price": "1.17332",
+      "timeInForce": "GTC"
+    },
+    "stopLossOnFill": {
+      "price": "1.18512",
+      "timeInForce": "GTC"
+    },
+    "reason": "CLIENT_ORDER",
+    "id": "390",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "390",
+    "requestID": "60445726718173449",
+    "time": "2018-05-16T14:53:08.418452768Z"
+  },
+  "orderFillTransaction": {
+    "type": "ORDER_FILL",
+    "orderID": "390",
+    "instrument": "EUR_USD",
+    "units": "-1000",
+    "price": "1.17902",
+    "pl": "0.0000",
+    "financing": "0.0000",
+    "commission": "0.0000",
+    "accountBalance": "10413.4556",
+    "gainQuoteHomeConversionFactor": "1.34119",
+    "lossQuoteHomeConversionFactor": "1.34136",
+    "guaranteedExecutionFee": "0.0000",
+    "halfSpreadCost": "0.0805",
+    "reason": "MARKET_ORDER",
+    "tradeOpened": {
+      "price": "1.17902",
+      "tradeID": "391",
+      "units": "-1000",
+      "guaranteedExecutionFee": "0.0000",
+      "halfSpreadCost": "0.0805",
+      "initialMarginRequired": "31.6300"
+    },
+    "fullPrice": {
+      "closeoutBid": "1.17887",
+      "closeoutAsk": "1.17929",
+      "timestamp": "2018-05-16T14:53:04.285356203Z",
+      "bids": [
+        {
+          "price": "1.17902",
+          "liquidity": "10000000"
+        }
+      ],
+      "asks": [
+        {
+          "price": "1.17914",
+          "liquidity": "10000000"
+        }
+      ]
+    },
+    "id": "391",
+    "userID": 1919548,
+    "accountID": "101-003-1919548-002",
+    "batchID": "390",
+    "requestID": "60445726718173449",
+    "time": "2018-05-16T14:53:08.418452768Z"
+  },
+  "relatedTransactionIDs": [
+    "390",
+    "391",
+    "392",
+    "393"
+  ],
+  "lastTransactionID": "393"
+}
+2018-05-16 22:54:04,229 [INFO] __main__ : MAx: processed 2018-05-16T14:53:00.000000Z : state: SHORT
+2018-05-16 22:55:01,146 [INFO] __main__ : MAx: processed 2018-05-16T14:54:00.000000Z : state: SHORT
+2018-05-16 22:56:00,129 [INFO] __main__ : MAx: processed 2018-05-16T14:55:00.000000Z : state: SHORT
+2018-05-16 22:57:00,750 [INFO] __main__ : MAx: processed 2018-05-16T14:56:00.000000Z : state: SHORT
+2018-05-16 22:57:59,938 [INFO] __main__ : MAx: processed 2018-05-16T14:57:00.000000Z : state: SHORT
+2018-05-16 22:59:00,933 [INFO] __main__ : MAx: processed 2018-05-16T14:58:00.000000Z : state: SHORT
